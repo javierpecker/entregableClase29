@@ -1,0 +1,85 @@
+<div class="container text-center my-3">
+    <div class="jumbotron" style="background-color: rgb(191, 226, 191);color: darkgreen;">
+        <h1>USER OK LOGIN!</h1>
+        <br>
+        <h2><i>Bienvenido {{nombre}}</i></h2>
+        <br>
+        <img src="{{foto}}" width="100" alt=""><br>
+        <a href="#">{{email}}</a>
+        <br>
+        <br>
+        <h4>Visitas: {{contador}}</h4>
+        <a class="btn btn-danger mt-3" href="/logout"><span class="fa fa-sign-out"></span><span> Logout</span></a>
+    </div>
+</div>
+
+<body>
+    <div class="chatContainer">
+    <form id="chatform">
+      <div class='form-group'>
+        <label for='email'>Email</label>
+        <input class='form-control' type='email' name='email' id='mail' required>
+    </div>
+    <div class='form-group'>
+        <label for='nombre'>Nombre</label>
+        <input class='form-control' type='text' name='nombre' id='nombre' required>
+    </div>
+    <div class='form-group'>
+        <label for='apellido'>Apellido</label>
+        <input class='form-control' type='text' name='apellido' id='apellido' required>
+    </div>
+    <div class='form-group'>
+        <label for='alias'>Alias</label>
+        <input class='form-control' type='text' name='alias' id='alias' required>
+    </div>
+    <div class='form-group'>
+        <label for='edad'>Edad</label>
+        <input class='form-control' type='number' name='edad' id='edad' required>
+    </div>
+    <div class='form-group'>
+        <label for='url'>URL</label>
+        <input class='form-control' type='text' name='avatar' id='url' required>
+    </div>
+    <div class='form-group'>
+        <label for='mensaje'>Mensaje</label>
+        <input class='form-control' type='text' name='mensaje' id='msg' required>
+    </div>
+    <div class='mt-2'>
+    </input>
+  </label>
+  <button 
+  type="submit" 
+  class="btn btn-primary button">Send</button>
+    </div>
+      <!-- <li>
+        <label>Mensaje
+            <input 
+            id="msg" 
+            type="text" 
+            placeholder="Enter Message" 
+            required autocomplete="off" />
+        </label>
+      </li>
+        <label>Email
+            <input 
+            id="mail" 
+            type="email"
+            placeholder="email">
+          </input>
+        </label>
+        <button 
+        type="submit" 
+        class="btn btn-primary button">Send</button>
+        <li>
+        </li>
+        <li>
+        </li> -->
+    </form>
+    <div 
+    class="chat" 
+    id="chat"></div>
+</div>
+</div>
+<script src="/socket.io/socket.io.js"></script>
+<script src="main.js"></script>
+</body>
