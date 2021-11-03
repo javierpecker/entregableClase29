@@ -40,7 +40,6 @@ class mensajesDB {
 
 
     async init() {
-        console.log("Inicializo la base");
     };
 
     async get(){

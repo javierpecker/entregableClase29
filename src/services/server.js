@@ -28,9 +28,9 @@ dbConnection.init();
 initWSServer(server);
 
 
-const layoutFolderPath = path.resolve(__dirname, '../views/layouts');
-const defaultLayerPath = path.resolve(__dirname, '../views/layouts/index.hbs');
-const partialFolderPath = path.resolve(__dirname, '../views/partial');
+const layoutFolderPath = path.resolve(__dirname, '../../views/layouts');
+const defaultLayerPath = path.resolve(__dirname, '../../views/layouts/index.hbs');
+const partialFolderPath = path.resolve(__dirname, '../../views/partial');
 
 app.set('view engine', 'hbs');
 app.engine(
